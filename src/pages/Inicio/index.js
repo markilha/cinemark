@@ -8,7 +8,8 @@ function Inicio() {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/monicahillman/cinetag-api/videos')
+        
+        fetch('https://my-json-server.typicode.com/markilha/cineapi/videos')
             .then(resposta => resposta.json())
             .then(dados => {
                 setVideos(dados)
